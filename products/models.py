@@ -56,7 +56,7 @@ class SmartPhoneModel(models.Model):
     # Питание
     capacity = models.IntegerField(verbose_name="Емкость акамулятора")
     garant = models.CharField(max_length=120, verbose_name="Гарантия")
-    color = models.ManyToManyField(ColorTypeModel, verbose_name="Цвет")
+    color = models.CharField(max_length=120, verbose_name="Цвета")
     images = models.ForeignKey(ImagesForProductsModel, verbose_name="Фото", default=None, on_delete=models.CASCADE)
 
     def __str__(self):

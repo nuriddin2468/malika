@@ -38,18 +38,6 @@ class UsbTypeModel(models.Model):
         verbose_name_plural = "Типы USB"
 
 
-class ColorTypeModel(models.Model):
-    name = models.CharField(max_length=120)
-    code = models.CharField(max_length=120)
-
-    def __str__(self):
-        return self.name
-
-    class Meta:
-        verbose_name = "Доступный Цвет"
-        verbose_name_plural = "Доступные Цвета"
-
-
 class ImagesForProductsModel(models.Model):
     alt = models.CharField(verbose_name="Название фото", max_length=120)
     image1 = models.ImageField(verbose_name="Фото-1", default=None)
