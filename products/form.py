@@ -7,6 +7,3 @@ class SmartPhoneModelForm(ModelForm):
     class Meta:
         model = SmartPhoneModel
         fields = '__all__'
-        widgets = {
-            'color': TextInput(attrs={'type':'color'}),
-        }

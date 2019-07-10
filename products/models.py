@@ -90,7 +90,7 @@ class SmartPhoneModel(models.Model):
     height = models.FloatField(max_length=30, verbose_name="Высота", default=None)
     thickness = models.FloatField(max_length=30, verbose_name="Толщина")
     width = models.FloatField(max_length=30, verbose_name="Ширина")
-    
+
     def __str__(self):
         return self.name
 
